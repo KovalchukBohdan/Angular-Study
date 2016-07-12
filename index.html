@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test project Angular</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="app">
+<nav>
+    <div class="container">
+        <div class="row">
+            <a href="#/">
+                <button class="btn btn-danger">Главная</button>
+            </a>
+            <a href="#/about">
+                <button class="btn btn-success">О нас</button>
+            </a>
+            <a href="#/date">
+                <button class="btn btn-warning">Дата</button>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div ng-view>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="js/controllers/controllers.js"></script>
+</body>
+</html>
