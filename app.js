@@ -13,6 +13,10 @@ app.config(function($routeProvider){
         .when('/date',{
             templateUrl: 'pages/date.html',
             controller: 'Date'
+        })
+        .when('/validate',{
+            templateUrl: 'pages/validate.html',
+            controller: 'Validation'
         });
 });
 
